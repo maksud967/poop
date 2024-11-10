@@ -1,0 +1,82 @@
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b, #ff6a00, #d83b01);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    color: white;
+}
+
+.catchy-text {
+    font-size: 3em;
+    font-weight: bold;
+    animation: text-blink 1s step-end infinite;
+}
+
+.intro-text, .question-text {
+    font-size: 1.5em;
+    margin: 20px 0;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.yes-button, .no-button {
+    font-size: 1.5em;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.yes-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.no-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.yes-button:hover {
+    background-color: #45a049;
+}
+
+.no-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Animation for Background */
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Text Animation */
+@keyframes text-blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

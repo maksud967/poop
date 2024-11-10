@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh No!</title>
+    <style>
+        body {
+            /* Use local image in the 'images/' folder */
+            background: url('images/crying-emojis.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        .poop {
+            font-size: 5em;
+            animation: poop-animation 2s infinite;
+        }
+        @keyframes poop-animation {
+            0% { transform: rotate(0deg); }
+            50% { transform: rotate(15deg); }
+            100% { transform: rotate(0deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Oops, that's unfortunate! 💩</h1>
+    <div class="poop">💩</div>
+
+   
+
+    <script src="script.js" defer></script>
+</body>
+</html>
